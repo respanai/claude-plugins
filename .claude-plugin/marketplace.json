@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
+  "name": "respan",
+  "description": "Respan's plugins for Claude Code.",
+  "owner": { "name": "Respan", "url": "https://respan.ai" },
+  "plugins": [
+    {
+      "name": "respan",
+      "displayName": "Respan",
+      "description": "Respan for Claude Code: the Respan skill and the hosted Respan MCP server, for traces, evals, prompts, datasets, and gateway routing.",
+      "author": { "name": "Respan", "url": "https://respan.ai" },
+      "homepage": "https://www.respan.ai/docs",
+      "license": "Apache-2.0",
+      "keywords": ["llm", "observability", "evals", "prompts", "gateway", "mcp"],
+      "category": "observability",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/respanai/respan.git",
+        "path": "claude-plugin"
+      }
+    },
+    {
+      "name": "session-traces",
+      "displayName": "Respan Session Traces",
+      "description": "Send your Claude Code sessions to Respan as traces, with a span for each model request and tool call.",
+      "author": { "name": "Respan", "url": "https://respan.ai" },
+      "homepage": "https://www.respan.ai/docs/integrations/claude-code",
+      "license": "Apache-2.0",
+      "keywords": ["llm", "observability", "tracing", "opentelemetry"],
+      "category": "observability",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/respanai/respan.git",
+        "path": "claude-tracing-plugin"
+      }
+    }
+  ]
+}
